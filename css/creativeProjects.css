@@ -1,0 +1,151 @@
+#portfolioProjects .container-fluid {
+    max-width: 1920px;
+  }
+  
+  #portfolioProjects .container-fluid .portfolio-box {
+    position: relative;
+    display: block;
+  }
+  
+  #portfolioProjects .container-fluid .portfolio-box .portfolio-box-caption {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    opacity: 0;
+    color: #fff;
+    background: rgba(253, 20, 3, 0.89);
+    -webkit-transition: opacity 0.25s ease;
+    transition: opacity 0.25s ease;
+    text-align: center;
+  }
+  
+  #portfolioProjects .container-fluid .portfolio-box .portfolio-box-caption .project-category {
+    font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  #portfolioProjects .container-fluid .portfolio-box .portfolio-box-caption .project-name {
+    font-size: 1.2rem;
+  }
+  
+  #portfolioProjects .container-fluid .portfolio-box:hover .portfolio-box-caption {
+    opacity: 1;
+  }
+
+  /*game released*/
+  /*.mastheadOktoberfest {
+    padding-top: 10rem;
+    padding-bottom: calc(10rem - 72px);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 100%), url("../img/Oktober_Express.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 450px 500px;
+    background-color: rgb(34, 34, 34);
+  }
+  
+  @media (min-width: 992px) {
+    .mastheadOktoberfest {
+      height: 10vh;
+      min-height: 40rem;
+      padding-top: 72px;
+      padding-bottom: 0;
+    }
+    .mastheadOktoberfest p {
+      font-size: 1.15rem;
+    }
+    .mastheadOktoberfest h1 {
+      font-size: 3rem;
+    }
+  }*/
+
+  /*Unreleased game*/
+  .mastheadCaruana {
+    padding-top: 10rem;
+    padding-bottom: calc(10rem - 72px);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 100%), url("../img/CARUANA_LOGO\(Opacity\).png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 850px 500px;
+    background-color: rgb(34, 34, 34);
+  }
+  
+  @media (min-width: 992px) {
+    .mastheadCaruana {
+      height: 10vh;
+      min-height: 40rem;
+      padding-top: 72px;
+      padding-bottom: 0;
+    }
+    
+    .mastheadCaruana h1 {
+      font-size: 3rem;
+    }
+  }
+
+    /*Unreleased game*/
+  .mastheadPatuanu {
+    padding-top: 10rem;
+    padding-bottom: calc(7rem - 72px);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 100%), url("../img/Patuanu_Logo\(Opacity\).png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: contain;
+    background-color:rgb(34, 34, 34);
+  }
+  
+  @media (min-width: 992px) {
+    .mastheadPatuanu {
+      height: 10vh;
+      min-height: 40rem;
+      padding-top: 72px;
+      padding-bottom: 0;
+    }
+
+    .mastheadPatuanu h1 {
+      font-size: 3rem;
+    }
+  }
+
+  /*Games*/
+  .mastheadGames {
+    padding-top: 16rem;
+    padding-bottom: calc(3rem - 72px);
+    background: url("../img/Games_background_site.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: contain;
+
+  }
+  
+  @media (min-width: 992px) {
+    .mastheadGames {
+      height: 10vh;
+      min-height: 40rem;
+      padding-top: 72px;
+    }
+    
+    .mastheadGames h1 {
+      font-size: 3rem;
+    }
+  }
