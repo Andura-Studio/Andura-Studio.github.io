@@ -9807,21 +9807,37 @@ header.masthead h1 {
                   padding-top: 72px;
                   padding-bottom: 0;
               }
-              @media (min-width: 1280px) {
+              @media (min-width: 1000px) {
+                header.masthead {
+                  height: 0;
+                  min-height: 35rem;
+                  padding-top: 72px;
+                  padding-bottom: 0;
+              }
+              }
+              @media (min-width: 1200px) {
                   header.masthead {
                       height: 100vh;
                       min-height: 35rem;
                       padding-top: 72px;
                       padding-bottom: 30px;
                   }
-                  @media (min-width: 1920px) {
+                  @media (min-width: 1300px) {
+                    header.masthead {
+                      height: 100vh;
+                      min-height: 35rem;
+                      padding-top: 72px;
+                      padding-bottom: 30px;
+                  }
+                  }
+                  @media (min-width: 1900px) {
                       header.masthead {
                           height: 100vh;
                           min-height: 35rem;
                           padding-top: 72px;
                           padding-bottom: 30px;
                       }
-                      @media (min-width: 2560px) {
+                      @media (min-width: 2500px) {
                           header.masthead {
                               height: 100vh;
                               min-height: 35rem;
@@ -10056,8 +10072,8 @@ header.masthead h1 {
 /*Carousel*/
 
     .carousel-inner img {
-      width: 100%;
-      height: 100%;
+      width: contain;
+      height: contain;
       margin-top: 10px;
       opacity: 0.9;
     }
@@ -10131,7 +10147,6 @@ header.masthead h1 {
 
     /*Carousel - different types of devices*/
 
-    /*Mobile*/
     @media (max-width: 600px) {
       .main-btn {
         padding: 5px 50px;
@@ -10151,7 +10166,7 @@ header.masthead h1 {
 
       .carousel-indicators {
         margin-bottom: 1px;
-        top: 330px;
+        top: 400px;
       }
 
       #mainSlider .carousel-caption {
@@ -10189,12 +10204,11 @@ header.masthead h1 {
       }
     }
 
-    /*IPads*/
-    @media (min-width: 700px) {
+    @media (min-width: 600px) {
       .main-btn {
         padding: 10px 60px;
         top: 0px;
-        font-size: 20px;
+        font-size: 15px;
         opacity: 1;
       }
 
@@ -10209,15 +10223,15 @@ header.masthead h1 {
 
       .carousel-indicators {
         margin-bottom: 1px;
-        top: 650px;
+        top: 600px;
       }
 
       #mainSlider .carousel-caption {
-        top: 470px;
+        top: 450px;
       }
     
       #mainSlider .carousel-caption h2 {
-        font-size: 55px;
+        font-size: 45px;
         text-transform: uppercase;
         color: rgb(255, 255, 255);
       }
@@ -10237,26 +10251,25 @@ header.masthead h1 {
         }    
 
       .carousel-control-prev {
-        height: 300px;
+        height: 450px;
         background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 10%, black 40%);
       }
-      
+    
       .carousel-control-next {
-        height: 300px;
+        height: 450px;
         background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 10%, black 40%);
       }
     }
 
-    @media (min-width: 800px) {
+    @media (orientation: landscape) {
       .main-btn {
-        padding: 10px 60px;
-        top: 0px;
-        font-size: 20px;
+        font-size: 15px;
         opacity: 1;
+        font-size: 20px;
       }
 
       #mainSlider .carousel-inner, #mainSlider .carousel-item {
-        height: 65vh;
+        height: 700px;
       }
 
       .carousel-indicators li {
@@ -10266,17 +10279,18 @@ header.masthead h1 {
 
       .carousel-indicators {
         margin-bottom: 1px;
-        top: 700px;
+        top: 705px;
       }
 
       #mainSlider .carousel-caption {
-        top: 500px;
+        top: 550px;
       }
     
       #mainSlider .carousel-caption h2 {
         font-size: 55px;
         text-transform: uppercase;
         color: rgb(255, 255, 255);
+        text-shadow: 2px 2px 15px rgb(0, 0, 0);
       }
       
       #mainSlider .carousel-caption p {
@@ -10287,399 +10301,19 @@ header.masthead h1 {
       }
 
       .carousel-inner img {
-        width: auto;
-        height: auto;
-        position: absolute;
+        height: contain;
+        width: contain;
         margin-top: 15px;
         }    
 
       .carousel-control-prev {
-        height: 400px;
+        height: 700px;
         background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 10%, black 40%);
       }
-        
+    
       .carousel-control-next {
-        height: 400px;
+        height: 700px;
         background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 10%, black 40%);
-      }
-    }
-
-    @media (min-width: 900px) {
-      .main-btn {
-        padding: 10px 60px;
-        top: 0px;
-        font-size: 20px;
-        opacity: 1;
-      }
-
-      #mainSlider .carousel-inner, #mainSlider .carousel-item {
-        height: 65vh;
-      }
-
-      .carousel-indicators li {
-        height: 5px;
-        width: 70px;
-      }
-
-      .carousel-indicators {
-        margin-bottom: 1px;
-        top: 850px;
-      }
-
-      #mainSlider .carousel-caption {
-        top: 650px;
-      }
-    
-      #mainSlider .carousel-caption h2 {
-        font-size: 55px;
-        text-transform: uppercase;
-        color: rgb(255, 255, 255);
-      }
-      
-      #mainSlider .carousel-caption p {
-        font-size: 22px;
-        font-weight: 300;
-        margin-bottom: 20px;
-        color: rgb(255, 255, 255);
-      }
-
-      .carousel-inner img {
-        width: auto;
-        height: auto;
-        position: absolute;
-        margin-top: 15px;
-        }    
-
-      .carousel-control-prev {
-        height: 400px;
-        background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 10%, black 40%);
-      }
-          
-      .carousel-control-next {
-        height: 400px;
-        background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 10%, black 40%);
-      }
-    }
-
-    /*TV 720 HD*/
-    @media (min-width: 1280px) {
-      .carousel-inner img {
-        width: 100%;
-        height: 100%;
-        margin-top: 10px;
-        opacity: 0.9;
-      }
-
-      #mainSlider .carousel-inner, #mainSlider .carousel-item {
-        height: 90vh;
-        background-color: black;
-      }
-
-      .carousel-indicators li {
-        height: 8px;
-        width: 100px;
-      }
-
-      .carousel-indicators {
-        top: 650px;
-      }
-    
-      #mainSlider .carousel-caption {
-        top: 70%;
-      }
-    
-      #mainSlider .carousel-caption h2 {
-        text-transform: uppercase;
-        font-size: 50px;
-        margin-bottom: 0px;
-        color: rgb(255, 255, 255);
-        text-shadow:5px 5px 7px black;
-      }
-      
-      #mainSlider .carousel-caption p {
-        font-size: 22px;
-        font-weight: 300;
-        margin-bottom: 0px;
-        color: rgb(255, 255, 255);
-      }
-    
-      .main-btn {
-        -webkit-box-flex: 0;
-        background-color: #ff0000;
-        color: white;
-        text-transform: uppercase;
-        width: 200px;
-        height: 60px;
-        padding: 10px 50px;
-        border-radius: 30px;
-        border: 3px solid #f5724e;
-        transition: .5s;
-        position: relative;
-        top:30px;
-        bottom: 30px;
-        font-size: 25px;
-      }
-    
-      .main-btn:hover {
-        text-decoration: none;
-        color: white;
-        background-color: #ee3e0d;
-        border-color: #ee3e0d;
-      }
-    
-      .carousel-indicators .active {
-        background-color: #f24516;
-      }
-
-    .carousel-control-prev {
-      height: 675px;
-      background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 10%, black 40%);
-    }
-          
-    .carousel-control-next {
-      height: 675px;
-      background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 10%, black 40%);
-      }
-    }
-
-    /*TV 1080 HD*/
-     @media (min-width: 1920px) {
-      .carousel-inner img {
-        width: 100%;
-        height: 100%;
-        margin-top: 10px;
-        opacity: 0.9;
-      }
-      
-      #mainSlider .carousel-inner, #mainSlider .carousel-item {
-        height: 90vh;
-      }
-      
-      .carousel-indicators li {
-        height: 8px;
-        width: 100px;
-      }
-      
-      .carousel-indicators {
-        top: 975px;
-      }
-          
-      #mainSlider .carousel-caption {
-        top: 75%;
-      }
-          
-      #mainSlider .carousel-caption h2 {
-        text-transform: uppercase;
-        font-size: 50px;
-        margin-bottom: 0px;
-        color: rgb(255, 255, 255);
-        text-shadow:5px 5px 7px black;
-      }
-            
-      #mainSlider .carousel-caption p {
-        font-size: 22px;
-        font-weight: 300;
-        margin-bottom: 0px;
-        color: rgb(255, 255, 255);
-      }
-          
-      .main-btn {
-        -webkit-box-flex: 0;
-        background-color: #ff0000;
-        color: white;
-        text-transform: uppercase;
-        width: 200px;
-        height: 60px;
-        padding: 10px 50px;
-        border-radius: 30px;
-        border: 3px solid #f5724e;
-        transition: .5s;
-        position: relative;
-        top:30px;
-        bottom: 30px;
-        font-size: 25px;
-      }
-          
-      .main-btn:hover {
-        text-decoration: none;
-        color: white;
-        background-color: #ee3e0d;
-        border-color: #ee3e0d;
-      }
-          
-      .carousel-indicators .active {
-        background-color: #f24516;
-      }
-      
-    .carousel-control-prev {
-      height: 1000px;
-      background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 10%, black 40%);
-    }
-          
-    .carousel-control-next {
-      height: 1000px;
-      background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 10%, black 40%);
-      }
-    }
-
-    /*TV 2560 HD Ultrawide*/
-    @media (min-width: 2560px) {
-      .carousel-inner img {
-        width: 100%;
-        height: 100%;
-        margin-top: 10px;
-        opacity: 0.9;
-      }
-      
-      #mainSlider .carousel-inner, #mainSlider .carousel-item {
-        height: 90vh;
-      }
-      
-      .carousel-indicators li {
-        height: 8px;
-        width: 100px;
-      }
-      
-      .carousel-indicators {
-        top: 907px;
-      }
-          
-      #mainSlider .carousel-caption {
-        top: 75%;
-      }
-          
-      #mainSlider .carousel-caption h2 {
-        text-transform: uppercase;
-        font-size: 50px;
-        margin-bottom: 0px;
-        color: rgb(255, 255, 255);
-        text-shadow:5px 5px 7px black;
-      }
-            
-      #mainSlider .carousel-caption p {
-        font-size: 22px;
-        font-weight: 300;
-        margin-bottom: 0px;
-        color: rgb(255, 255, 255);
-      }
-          
-      .main-btn {
-        -webkit-box-flex: 0;
-        background-color: #ff0000;
-        color: white;
-        text-transform: uppercase;
-        width: 200px;
-        height: 60px;
-        padding: 10px 50px;
-        border-radius: 30px;
-        border: 3px solid #f5724e;
-        transition: .5s;
-        position: relative;
-        top:30px;
-        bottom: 30px;
-        font-size: 25px;
-      }
-          
-      .main-btn:hover {
-        text-decoration: none;
-        color: white;
-        background-color: #ee3e0d;
-        border-color: #ee3e0d;
-      }
-          
-      .carousel-indicators .active {
-        background-color: #f24516;
-      }
-
-    .carousel-control-prev {
-      height: 920px;
-      background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 10%, black 40%);
-    }
-          
-    .carousel-control-next {
-      height: 920px;
-      background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 10%, black 40%);
-      }
-    }
-
-    /*4K*/
-    @media (min-width: 3000px) {
-      .carousel-inner img {
-        width: 100%;
-        height: 100%;
-        margin-top: 10px;
-        opacity: 0.9;
-      }
-      
-      #mainSlider .carousel-inner, #mainSlider .carousel-item {
-        height: 90vh;
-      }
-      
-      .carousel-indicators li {
-        height: 8px;
-        width: 100px;
-      }
-      
-      .carousel-indicators {
-        top: 1945px;
-      }
-          
-      #mainSlider .carousel-caption {
-        top: 85%;
-      }
-          
-      #mainSlider .carousel-caption h2 {
-        text-transform: uppercase;
-        font-size: 50px;
-        margin-bottom: 0px;
-        color: rgb(255, 255, 255);
-        text-shadow:5px 5px 7px black;
-      }
-            
-      #mainSlider .carousel-caption p {
-        font-size: 22px;
-        font-weight: 300;
-        margin-bottom: 0px;
-        color: rgb(255, 255, 255);
-      }
-          
-      .main-btn {
-        -webkit-box-flex: 0;
-        background-color: #ff0000;
-        color: white;
-        text-transform: uppercase;
-        width: 200px;
-        height: 60px;
-        padding: 10px 50px;
-        border-radius: 30px;
-        border: 3px solid #f5724e;
-        transition: .5s;
-        position: relative;
-        top:30px;
-        bottom: 30px;
-        font-size: 25px;
-      }
-          
-      .main-btn:hover {
-        text-decoration: none;
-        color: white;
-        background-color: #ee3e0d;
-        border-color: #ee3e0d;
-      }
-          
-      .carousel-indicators .active {
-        background-color: #f24516;
-      }
-
-            
-    .carousel-control-prev {
-      height: 1945px;
-      background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 10%, black 40%);
-    }
-          
-    .carousel-control-next {
-      height: 1945px;
-      background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 10%, black 40%);
       }
     }
 
