@@ -9786,20 +9786,6 @@ header.masthead h1 {
       padding-top: 72px;
       padding-bottom: 0;
   }
-  @media (max-width: 700px) {
-      header.masthead {
-          height: 0;
-          min-height: 35rem;
-          padding-top: 72px;
-          padding-bottom: 0;
-      }
-      @media (max-width: 800px) {
-          header.masthead {
-              height: 0;
-              min-height: 35rem;
-              padding-top: 72px;
-              padding-bottom: 0;
-          }
           @media (max-width: 900px) {
               header.masthead {
                   height: 0;
@@ -9807,50 +9793,6 @@ header.masthead h1 {
                   padding-top: 72px;
                   padding-bottom: 0;
               }
-              @media (min-width: 1000px) {
-                header.masthead {
-                  height: 0;
-                  min-height: 35rem;
-                  padding-top: 72px;
-                  padding-bottom: 0;
-              }
-              }
-              @media (min-width: 1200px) {
-                  header.masthead {
-                      height: 100vh;
-                      min-height: 35rem;
-                      padding-top: 72px;
-                      padding-bottom: 30px;
-                  }
-                  @media (min-width: 1300px) {
-                    header.masthead {
-                      height: 100vh;
-                      min-height: 35rem;
-                      padding-top: 72px;
-                      padding-bottom: 30px;
-                  }
-                  }
-                  @media (min-width: 1900px) {
-                      header.masthead {
-                          height: 100vh;
-                          min-height: 35rem;
-                          padding-top: 72px;
-                          padding-bottom: 30px;
-                      }
-                      @media (min-width: 2500px) {
-                          header.masthead {
-                              height: 100vh;
-                              min-height: 35rem;
-                              padding-top: 72px;
-                              padding-bottom: 30px;
-                          }
-                          @media (min-width: 3000px) {
-                              header.masthead {
-                                  height: 100vh;
-                                  min-height: 35rem;
-                                  padding-top: 72px;
-                                  padding-bottom: 30px;
-                              }
                               header.masthead p {
                                   font-size: 1.15rem;
                               }
