@@ -9786,88 +9786,75 @@ header.masthead h1 {
       padding-top: 72px;
       padding-bottom: 0;
   }
-          @media (max-width: 900px) {
-              header.masthead {
-                  height: 0;
-                  min-height: 35rem;
-                  padding-top: 72px;
-                  padding-bottom: 0;
-              }
-                              header.masthead p {
-                                  font-size: 1.15rem;
-                              }
-                              header.masthead h1 {
-                                  font-size: 3rem;
-                              }
-                          }
-                          @media (min-width: 1200px) {
-                              header.masthead h1 {
-                                  font-size: 3.5rem;
-                              }
-                          }
-                          #portfolio .container-fluid {
-                              max-width: 1920px;
-                          }
-                          #portfolio .container-fluid .portfolio-box {
-                              position: relative;
-                              display: block;
-                          }
-                          #portfolio .container-fluid .portfolio-box .portfolio-box-caption {
-                              display: -webkit-box;
-                              display: -ms-flexbox;
-                              display: flex;
-                              -webkit-box-align: center;
-                              -ms-flex-align: center;
-                              align-items: center;
-                              -webkit-box-pack: center;
-                              -ms-flex-pack: center;
-                              justify-content: center;
-                              -webkit-box-orient: vertical;
-                              -webkit-box-direction: normal;
-                              -ms-flex-direction: column;
-                              flex-direction: column;
-                              width: 100%;
-                              height: 100%;
-                              position: absolute;
-                              bottom: 0;
-                              text-align: center;
-                              opacity: 0;
-                              color: #fff;
-                              background: rgba(245, 42, 42, 0.9);
-                              -webkit-transition: opacity 0.25s ease;
-                              transition: opacity 0.25s ease;
-                              text-align: center;
-                          }
-                          #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category {
-                              font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-                                  "Noto Color Emoji";
-                              font-size: 0.85rem;
-                              font-weight: 600;
-                              text-transform: uppercase;
-                          }
-                          #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name {
-                              font-size: 1.2rem;
-                          }
-                          #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption {
-                              opacity: 1;
-                          }
-                      }
-                  }
-              }
-          }
+  @media (max-width: 900px) {
+      header.masthead {
+          height: 0;
+          min-height: 35rem;
+          padding-top: 72px;
+          padding-bottom: 0;
+      }
+      header.masthead p {
+          font-size: 1.15rem;
+      }
+      header.masthead h1 {
+          font-size: 3rem;
       }
   }
+  @media (min-width: 1200px) {
+      header.masthead h1 {
+          font-size: 3.5rem;
+      }
+  }
+  #portfolio .container-fluid {
+      max-width: 1920px;
+  }
+  #portfolio .container-fluid .portfolio-box {
+      position: relative;
+      display: block;
+  }
+  #portfolio .container-fluid .portfolio-box .portfolio-box-caption {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      bottom: 0;
+      text-align: center;
+      opacity: 0;
+      color: #fff;
+      background: rgba(245, 42, 42, 0.9);
+      -webkit-transition: opacity 0.25s ease;
+      transition: opacity 0.25s ease;
+      text-align: center;
+  }
+  #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category {
+      font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+  }
+  #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name {
+      font-size: 1.2rem;
+  }
+  #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption {
+      opacity: 1;
+  }
 }
-
-#portfolioProjects .container-fluid {
-  max-width: 1920px;
-}
-
 #portfolioProjects .container-fluid .portfolio-box {
   position: relative;
   display: block;
 }
-
 #portfolioProjects .container-fluid .portfolio-box .portfolio-box-caption {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9894,420 +9881,320 @@ header.masthead h1 {
   transition: opacity 0.25s ease;
   text-align: center;
 }
-
 #portfolioProjects .container-fluid .portfolio-box .portfolio-box-caption .project-category {
   font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 0.85rem;
   font-weight: 600;
   text-transform: uppercase;
 }
-
 #portfolioProjects .container-fluid .portfolio-box .portfolio-box-caption .project-name {
   font-size: 1.2rem;
 }
-
 #portfolioProjects .container-fluid .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
 }
-
-/*Game Released*/
 .mastheadOktoberfest {
   padding-top: 35rem;
   margin-top: 85px;
-  background-image: url("../img/Oktober_Express.png");
+  background-image: url(../img/Oktober_Express.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: contain;
-  background-color: rgb(34, 34, 34);
+  background-color: #222;
 }
-
 @media (min-width: 992px) {
   .mastheadOktoberfest {
-    padding-top: 35rem;
-    margin-top: 85px;
+      padding-top: 35rem;
+      margin-top: 85px;
   }
   .mastheadOktoberfest p {
-    font-size: 1.15rem;
+      font-size: 1.15rem;
   }
   .mastheadOktoberfest h1 {
-    font-size: 3rem;
+      font-size: 3rem;
   }
 }
-
-/*Unreleased game*/
 .mastheadCaruana {
   padding-top: 10rem;
   margin-top: 85px;
   padding-bottom: calc(7rem - 72px);
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 100%), url("../img/CARUANA_LOGO\(Opacity\).png");
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0) 100%), url("../img/CARUANA_LOGO\(Opacity\).jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: contain;
-  background-color: rgb(34, 34, 34);
+  background-color: #222;
 }
-
 @media (min-width: 992px) {
   .mastheadCaruana {
-    height: 10vh;
-    min-height: 40rem;
-    padding-top: 72px;
-    padding-bottom: 0;
+      height: 10vh;
+      min-height: 40rem;
+      padding-top: 72px;
+      padding-bottom: 0;
   }
-  
   .mastheadCaruana h1 {
-    font-size: 3rem;
+      font-size: 3rem;
   }
 }
-
-  /*Unreleased game*/
 .mastheadPatuanu {
   padding-top: 10rem;
   margin-top: 85px;
   padding-bottom: calc(7rem - 72px);
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 100%), url("../img/Patuanu_Logo\(Opacity\).png");
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0) 100%), url("../img/Patuanu_Logo\(Opacity\).jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: contain;
-  background-color:rgb(34, 34, 34);
+  background-color: #222;
 }
-
 @media (min-width: 992px) {
   .mastheadPatuanu {
-    height: 10vh;
-    min-height: 40rem;
-    padding-top: 72px;
-    padding-bottom: 0;
+      height: 10vh;
+      min-height: 40rem;
+      padding-top: 72px;
+      padding-bottom: 0;
   }
-
   .mastheadPatuanu h1 {
-    font-size: 3rem;
+      font-size: 3rem;
   }
 }
-
-/*Games*/
 .mastheadGames {
   padding-top: 16rem;
   padding-bottom: calc(3rem - 72px);
-  background: url("../img/Games_background_site.png");
+  background: url(../img/Games_background_site.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: contain;
-
 }
-
 @media (min-width: 992px) {
   .mastheadGames {
-    height: 10vh;
-    min-height: 40rem;
-    padding-top: 72px;
+      height: 10vh;
+      min-height: 40rem;
+      padding-top: 72px;
   }
-  
   .mastheadGames h1 {
-    font-size: 3rem;
+      font-size: 3rem;
   }
 }
 
 /*Carousel*/
+.carousel-inner img {
+  width: contain;
+  height: contain;
+  margin-top: 10px;
+  opacity: 0.9;
 
-    .carousel-inner img {
-      width: contain;
-      height: contain;
-      margin-top: 10px;
-      opacity: 0.9;
-    }
+  position: relative;
+  -webkit-animation: moving-img 5s;
+}
 
-    #mainSlider .carousel-inner, #mainSlider .carousel-item {
-      height: 60vh;
-    }
-
-    .carousel-indicators li {
-      height: 8px;
-      width: 100px;
-    }
-
-    .carousel-indicators {
-      top: 605px;
-    }
-  
-    #mainSlider .carousel-caption {
-      top: 70%;
-    }
-  
-    #mainSlider .carousel-caption h2 {
+@-webkit-keyframes moving-img {
+	0% { left: 0; opacity: 1; }
+	50% { left: -25px;opacity: 1; }
+	100% { left: -25px; opacity: 0;}
+}
+#mainSlider .carousel-inner,
+#mainSlider .carousel-item {
+  height: 60vh;
+}
+.carousel-indicators li {
+  height: 8px;
+  width: 100px;
+}
+.carousel-indicators {
+  top: 605px;
+}
+#mainSlider .carousel-caption {
+  top: 70%;
+}
+#mainSlider .carousel-caption h2 {
+  text-transform: uppercase;
+  font-size: 50px;
+  margin-bottom: 0;
+  color: #fff;
+}
+#mainSlider .carousel-caption p {
+  font-size: 22px;
+  font-weight: 300;
+  margin-bottom: 0;
+  color: #fff;
+}
+.main-btn {
+  -webkit-box-flex: 0;
+  background-color: red;
+  color: #fff;
+  text-transform: uppercase;
+  width: 200px;
+  height: 60px;
+  padding: 10px 50px;
+  border-radius: 30px;
+  border: 3px solid #f5724e;
+  transition: 0.5s;
+  position: relative;
+  top: 30px;
+  bottom: 30px;
+  font-size: 25px;
+}
+.main-btn:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: #ee3e0d;
+  border-color: #ee3e0d;
+}
+.carousel-indicators .active {
+  background-color: #f24516;
+}
+.carousel-control-prev {
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 10%, #000 40%);
+}
+.carousel-control-next {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 10%, #000 40%);
+}
+@media (max-width: 600px) {
+  .main-btn {
+      padding: 5px 50px;
+      top: 0;
+      font-size: 15px;
+      opacity: 1;
+  }
+  #mainSlider .carousel-inner,
+  #mainSlider .carousel-item {
+      height: 65vh;
+  }
+  .carousel-indicators li {
+      height: 5px;
+      width: 70px;
+  }
+  .carousel-indicators {
+      margin-bottom: 1px;
+      top: 400px;
+  }
+  #mainSlider .carousel-caption {
+      top: 230px;
+  }
+  #mainSlider .carousel-caption h2 {
+      font-size: 25px;
       text-transform: uppercase;
-      font-size: 50px;
-      margin-bottom: 0px;
-      color: rgb(255, 255, 255);
-    }
-    
-    #mainSlider .carousel-caption p {
+      color: #fff;
+  }
+  #mainSlider .carousel-caption p {
       font-size: 22px;
       font-weight: 300;
-      margin-bottom: 0px;
-      color: rgb(255, 255, 255);
-    }
-  
-    .main-btn {
-      -webkit-box-flex: 0;
-      background-color: #ff0000;
-      color: white;
-      text-transform: uppercase;
-      width: 200px;
-      height: 60px;
-      padding: 10px 50px;
-      border-radius: 30px;
-      border: 3px solid #f5724e;
-      transition: .5s;
-      position: relative;
-      top:30px;
-      bottom: 30px;
-      font-size: 25px;
-    }
-  
-    .main-btn:hover {
-      text-decoration: none;
-      color: white;
-      background-color: #ee3e0d;
-      border-color: #ee3e0d;
-    }
-  
-    .carousel-indicators .active {
-      background-color: #f24516;
-    }
-
-    .carousel-control-prev {
-      background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 10%, black 40%);
-    }
-
-    .carousel-control-next {
-      background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 10%, black 40%);
-    }
-
-    /*Carousel - different types of devices*/
-
-    @media (max-width: 600px) {
-      .main-btn {
-        padding: 5px 50px;
-        top: 0px;
-        font-size: 15px;
-        opacity: 1;
-      }
-
-      #mainSlider .carousel-inner, #mainSlider .carousel-item {
-        height: 65vh;
-      }
-
-      .carousel-indicators li {
-        height: 5px;
-        width: 70px;
-      }
-
-      .carousel-indicators {
-        margin-bottom: 1px;
-        top: 400px;
-      }
-
-      #mainSlider .carousel-caption {
-        top: 230px;
-      }
-    
-      #mainSlider .carousel-caption h2 {
-        font-size: 25px;
-        text-transform: uppercase;
-        color: rgb(255, 255, 255);
-      }
-      
-      #mainSlider .carousel-caption p {
-        font-size: 22px;
-        font-weight: 300;
-        margin-bottom: 20px;
-        color: rgb(255, 255, 255);
-      }
-
-      .carousel-inner img {
-        width: auto;
-        height: auto;
-        position: absolute;
-        margin-top: 15px;
-        }    
-
-      .carousel-control-prev {
-        height: 200px;
-        background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 10%, black 40%);
-      }
-    
-      .carousel-control-next {
-        height: 200px;
-        background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 10%, black 40%);
-      }
-    }
-
-    @media (min-width: 600px) {
-      .main-btn {
-        padding: 10px 60px;
-        top: 0px;
-        font-size: 15px;
-        opacity: 1;
-      }
-
-      #mainSlider .carousel-inner, #mainSlider .carousel-item {
-        height: 65vh;
-      }
-
-      .carousel-indicators li {
-        height: 5px;
-        width: 70px;
-      }
-
-      .carousel-indicators {
-        margin-bottom: 1px;
-        top: 600px;
-      }
-
-      #mainSlider .carousel-caption {
-        top: 450px;
-      }
-    
-      #mainSlider .carousel-caption h2 {
-        font-size: 45px;
-        text-transform: uppercase;
-        color: rgb(255, 255, 255);
-      }
-      
-      #mainSlider .carousel-caption p {
-        font-size: 22px;
-        font-weight: 300;
-        margin-bottom: 20px;
-        color: rgb(255, 255, 255);
-      }
-
-      .carousel-inner img {
-        width: auto;
-        height: auto;
-        position: absolute;
-        margin-top: 15px;
-        }    
-
-      .carousel-control-prev {
-        height: 450px;
-        background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 10%, black 40%);
-      }
-    
-      .carousel-control-next {
-        height: 450px;
-        background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 10%, black 40%);
-      }
-    }
-
-    @media (orientation: landscape) {
-      .main-btn {
-        font-size: 15px;
-        opacity: 1;
-        font-size: 20px;
-      }
-
-      #mainSlider .carousel-inner, #mainSlider .carousel-item {
-        height: 700px;
-      }
-
-      .carousel-indicators li {
-        height: 5px;
-        width: 70px;
-      }
-
-      .carousel-indicators {
-        margin-bottom: 1px;
-        top: 705px;
-      }
-
-      #mainSlider .carousel-caption {
-        top: 550px;
-      }
-    
-      #mainSlider .carousel-caption h2 {
-        font-size: 55px;
-        text-transform: uppercase;
-        color: rgb(255, 255, 255);
-        text-shadow: 2px 2px 15px rgb(0, 0, 0);
-      }
-      
-      #mainSlider .carousel-caption p {
-        font-size: 22px;
-        font-weight: 300;
-        margin-bottom: 20px;
-        color: rgb(255, 255, 255);
-      }
-
-      .carousel-inner img {
-        height: contain;
-        width: contain;
-        margin-top: 15px;
-        }    
-
-      .carousel-control-prev {
-        height: 700px;
-        background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 10%, black 40%);
-      }
-    
-      .carousel-control-next {
-        height: 700px;
-        background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 10%, black 40%);
-      }
-    }
-
-    /*Loader*/
-
-    .loader_bg{
-      position: fixed;
-      z-index: 999999;
-      background: #fff;
-      width: 100%;
-      height: 100%;
+      margin-bottom: 20px;
+      color: #fff;
   }
-  .loader{
-      border: solid transparent;
-      border-radius: 50%;
-      width: 150px;
-      height: 150px;
-      position: absolute;
-      top: calc(50vh - 75px);
-      left: calc(50vw - 75px);
+  .carousel-inner img {
+      width: auto;
+      height: auto;
+      margin-top: 15px;
   }
-  .loader:before, .loader-after{
-      content: '';
-      border: 1em solid #ff5733;
-      border-radius: 50%;
-      width: inherit;
-      height: inherit;
-      position: absolute;
+  .carousel-control-prev {
+      height: 200px;
+      background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 10%, #000 40%);
+  }
+  .carousel-control-next {
+      height: 200px;
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 10%, #000 40%);
+  }
+}
+@media (min-width: 600px) {
+  .main-btn {
+      padding: 10px 60px;
       top: 0;
-      left: 0;
-      animation: loader 2s linear infinite;
-      opacity: 0;
+      font-size: 15px;
+      opacity: 1;
   }
-  .loader:before{
-      animation-delay: 5s;
+  #mainSlider .carousel-inner,
+  #mainSlider .carousel-item {
+      height: 65vh;
   }
-  @keyframes loader{
-      0%{
-          transform: scale(0);
-          opacity: 0;
-      }
-      50%{
-          opacity: 1;
-      }
-      100%{
-          transform: scale(1);
-          opacity: 0;
-          
-      }
+  .carousel-indicators li {
+      height: 5px;
+      width: 70px;
   }
+  .carousel-indicators {
+      margin-bottom: 1px;
+      top: 600px;
+  }
+  #mainSlider .carousel-caption {
+      top: 450px;
+  }
+  #mainSlider .carousel-caption h2 {
+      font-size: 45px;
+      text-transform: uppercase;
+      color: #fff;
+  }
+  #mainSlider .carousel-caption p {
+      font-size: 22px;
+      font-weight: 300;
+      margin-bottom: 20px;
+      color: #fff;
+  }
+  .carousel-inner img {
+      width: auto;
+      height: auto;
+      margin-top: 15px;
+  }
+  .carousel-control-prev {
+      height: 450px;
+      background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 10%, #000 40%);
+  }
+  .carousel-control-next {
+      height: 450px;
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 10%, #000 40%);
+  }
+}
+@media (orientation: landscape) {
+  .main-btn {
+      font-size: 15px;
+      opacity: 1;
+      font-size: 20px;
+  }
+  #mainSlider .carousel-inner,
+  #mainSlider .carousel-item {
+      height: 700px;
+  }
+  .carousel-indicators li {
+      height: 5px;
+      width: 70px;
+  }
+  .carousel-indicators {
+      margin-bottom: 1px;
+      top: 705px;
+  }
+  #mainSlider .carousel-caption {
+      top: 550px;
+  }
+  #mainSlider .carousel-caption h2 {
+      font-size: 55px;
+      text-transform: uppercase;
+      color: #fff;
+      text-shadow: 2px 2px 15px #000;
+  }
+  #mainSlider .carousel-caption p {
+      font-size: 22px;
+      font-weight: 300;
+      margin-bottom: 20px;
+      color: #fff;
+  }
+  .carousel-inner img {
+      height: contain;
+      width: contain;
+      margin-top: 15px;
+  }
+  .carousel-control-prev {
+      height: 700px;
+      background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 10%, #000 40%);
+  }
+  .carousel-control-next {
+      height: 700px;
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 10%, #000 40%);
+  }
+}
 
-  /* Style all font awesome icons */
+/*Social Media Icons*/
 .fa {
   padding: 20px;
   font-size: 30px;
@@ -10317,24 +10204,83 @@ header.masthead h1 {
   margin: 5px 2px;
   border-radius: 50%;
 }
-
-/*YouTube Videos*/
-/* Add a hover effect if you want */
 .fa:hover {
   opacity: 0.7;
 }
 
-.iframe-container{
+/*Youtube videos*/
+.iframe-container {
   position: relative;
   width: 50%;
-  padding-bottom: 35%; 
-  height: 0;
+  padding-bottom: 35%;
 }
-
-.iframe-container iframe{
+.iframe-container iframe {
   position: absolute;
-  top:0;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  top: 0px;
   width: 100%;
   height: 100%;
   padding: 5px;
+}
+
+/*Pre-Loader*/
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #ff1304;
+  border-right: 16px solid #c50300;
+  border-bottom: 16px solid #9c0000;
+  border-left: 16px solid #f24516;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+body {
+  background-color: #222;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
 }

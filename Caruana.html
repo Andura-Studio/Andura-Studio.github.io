@@ -33,7 +33,12 @@
 
 </head>
 
-<body id="page-top">
+<!--Pre Load-->
+<body id="page-top" onload="loaderFunction()" style="margin: 0;">
+  
+  <div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
@@ -91,15 +96,15 @@
   </section>
 
   <!-- Pictures -->
-  <section id="portfolio" style="padding-top: 100px;">
+  <section id="portfolio" class="bg-light" style="padding-top: 100px;">
       <div class="container">
           <h2 class="text-center mt-0">IMAGES</h2>
           <hr class="divider my-7">
     <div class="container-fluid p-0">
       <div class="row no-gutters">
         <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/Caruana_1.png">
-            <img class="img-fluid" src="img/portfolio/fullsize/Caruana_1.png" alt="">
+          <a class="portfolio-box" href="img/portfolio/fullsize/Caruana_1.jpg">
+            <img class="img-fluid" src="img/portfolio/fullsize/Caruana_1.jpg" alt="">
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">
                 
@@ -111,8 +116,8 @@
           </a>
         </div>
         <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/Caruana_2.png">
-            <img class="img-fluid" src="img/portfolio/fullsize/Caruana_2.png" alt="">
+          <a class="portfolio-box" href="img/portfolio/fullsize/Caruana_2.jpg">
+            <img class="img-fluid" src="img/portfolio/fullsize/Caruana_2.jpg" alt="">
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">
                 
@@ -124,8 +129,8 @@
           </a>
         </div>
       <div class="col-lg-4 col-sm-6">
-        <a class="portfolio-box" href="img/portfolio/fullsize/Caruana_3.png">
-          <img class="img-fluid" src="img/portfolio/fullsize/Caruana_3.png" alt="">
+        <a class="portfolio-box" href="img/portfolio/fullsize/Caruana_3.jpg">
+          <img class="img-fluid" src="img/portfolio/fullsize/Caruana_3.jpg" alt="">
           <div class="portfolio-box-caption">
             <div class="project-category text-white-50">
               
@@ -138,8 +143,24 @@
     </div>
   </section>
 
+  <!--Download
+  <section class="page-section bg-light" style="padding-bottom: 100px;">
+    <h2 class="text-center mt-0">DOWNLOAD</h2>
+    <hr class="divider my-7">
+    <div class="container">
+      <div class="row justify-content-center">
+        <img src="https://img.icons8.com/color/144/000000/google-play.png"/>
+        <a class="main-btn rounded-sm" href="https://play.google.com/store?hl=pt_BR" target="_blanck" style="font-size: 15px; padding-right: 1px; padding-top: 17px; padding-left: 50px; margin: 50px;"> Play Store</a>
+      </div>
+      <div class="row justify-content-center">
+        <img src="https://img.icons8.com/color/150/000000/apple-app-store--v3.png"/>
+        <a class="main-btn rounded-sm" href="https://www.apple.com/br/ios/app-store/" target="_blanck" style="font-size: 15px; padding-right: 1px; padding-top: 17px; padding-left: 50px; margin: 50px;"> Apple Store</a>
+      </div>
+    </div>
+  </section>-->
+
   <!--Videos
-<section class="page-section" style="padding-bottom: 50px;">
+<section class="page-section bg-light" style="padding-bottom: 50px;">
       <h2 class="text-center mt-0">VIDEOS</h2>
       <hr class="divider my-7">
   <div class="container">
@@ -155,7 +176,7 @@
 </section>-->
 
   <!-- Contact Section -->
-  <section class="page-section" id="contact">
+  <section class="page-section bg-light" id="contact">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8 text-center">
@@ -184,9 +205,9 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-light py-5">
+  <footer class="py-5" style="background-color: #f0f0f0;">
     <div class="container">
-      <div class="small text-center text-muted">Copyright &copy; 2018 - ANDURÁ STUDIO</div>
+      <div class="small text-center text-muted">Copyright &copy; 2020 - ANDURÁ STUDIO</div>
     </div>
     <div class="container">
       <div class="row justify-content-center">
@@ -198,6 +219,22 @@
     </div>
   </footer>
 
+</div>
+
+  <!--Pre-Loader-->
+  <script>
+    var myVar;
+
+function loaderFunction() {
+  myVar = setTimeout(showPage, 1500);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+  </script>
+
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -208,14 +245,6 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/creative.min.js"></script>
-
-  <!--Loader-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script>
-    setTimeout(function(){
-      $('.loader_bg').fadeToggle();
-    }, 1500);
-  </script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164609733-1"></script>

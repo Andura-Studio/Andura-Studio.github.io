@@ -33,7 +33,12 @@
 
 </head>
 
-<body id="page-top">
+<!--Pre Load-->
+<body id="page-top" onload="loaderFunction()" style="margin: 0;">
+
+  <div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
@@ -91,15 +96,15 @@
   </section>
 
   <!-- Pictures -->
-  <section id="portfolio" style="padding-top: 100px;">
+  <section id="portfolio" class="bg-light" style="padding-top: 100px;">
       <div class="container">
           <h2 class="text-center mt-0">IMAGES</h2>
           <hr class="divider my-7">
     <div class="container-fluid p-0">
       <div class="row no-gutters">
         <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/Patuanu_Cerrado_01.png">
-            <img class="img-fluid" src="img/portfolio/fullsize/Patuanu_Cerrado_01.png" alt="">
+          <a class="portfolio-box" href="img/portfolio/fullsize/Patuanu_Cerrado_02.jpg">
+            <img class="img-fluid" src="img/portfolio/fullsize/Patuanu_Cerrado_02.jpg" alt="">
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">
                 
@@ -110,35 +115,9 @@
             </div>
           </a>
         </div>
-        <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/Patuanu_Cerrado_02.png">
-            <img class="img-fluid" src="img/portfolio/fullsize/Patuanu_Cerrado_02.png" alt="">
-            <div class="portfolio-box-caption">
-              <div class="project-category text-white-50">
-                
-              </div>
-              <div class="project-name">
-                
-              </div>
-            </div>
-          </a>
-        </div>
-      <div class="col-lg-4 col-sm-6">
-        <a class="portfolio-box" href="img/portfolio/fullsize/Patuanu_Cerrado_03.png">
-          <img class="img-fluid" src="img/portfolio/fullsize/Patuanu_Cerrado_03.png" alt="">
-          <div class="portfolio-box-caption">
-            <div class="project-category text-white-50">
-              
-            </div>
-            <div class="project-name">
-              
-            </div>
-          </div>
-        </a>
-    </div>
     <div class="col-lg-4 col-sm-6">
-      <a class="portfolio-box" href="img/portfolio/fullsize/Patuanu_MataAtlantica_01.png">
-        <img class="img-fluid" src="img/portfolio/fullsize/Patuanu_MataAtlantica_01.png" alt="">
+      <a class="portfolio-box" href="img/portfolio/fullsize/Patuanu_MataAtlantica_01.jpg">
+        <img class="img-fluid" src="img/portfolio/fullsize/Patuanu_MataAtlantica_01.jpg" alt="">
         <div class="portfolio-box-caption">
           <div class="project-category text-white-50">
             
@@ -149,22 +128,9 @@
         </div>
       </a>
   </div>
-  <div class="col-lg-4 col-sm-6">
-    <a class="portfolio-box" href="img/portfolio/fullsize/Patuanu_MataAtlantica_02.png">
-      <img class="img-fluid" src="img/portfolio/fullsize/Patuanu_MataAtlantica_02.png" alt="">
-      <div class="portfolio-box-caption">
-        <div class="project-category text-white-50">
-          
-        </div>
-        <div class="project-name">
-          
-        </div>
-      </div>
-    </a>
-</div>
 <div class="col-lg-4 col-sm-6">
-  <a class="portfolio-box" href="img/portfolio/fullsize/Patuanu_MataAtlantica_03.png">
-    <img class="img-fluid" src="img/portfolio/fullsize/Patuanu_MataAtlantica_03.png" alt="">
+  <a class="portfolio-box" href="img/portfolio/fullsize/Patuanu_MataAtlantica_03.jpg">
+    <img class="img-fluid" src="img/portfolio/fullsize/Patuanu_MataAtlantica_03.jpg" alt="">
     <div class="portfolio-box-caption">
       <div class="project-category text-white-50">
         
@@ -178,7 +144,7 @@
   </section>
 
   <!--Videos-->
-<section class="page-section" style="padding-bottom: 50px;">
+<section class="page-section bg-light" style="padding-bottom: 50px;">
       <h2 class="text-center mt-0">VIDEOS</h2>
       <hr class="divider my-7">
   <div class="container">
@@ -192,7 +158,7 @@
 </section>
 
   <!-- Contact Section -->
-  <section class="page-section" id="contact">
+  <section class="page-section bg-light" id="contact">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8 text-center">
@@ -221,9 +187,9 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-light py-5">
+  <footer class="py-5" style="background-color: #f0f0f0;">
     <div class="container">
-      <div class="small text-center text-muted">Copyright &copy; 2018 - ANDURÁ STUDIO</div>
+      <div class="small text-center text-muted">Copyright &copy; 2020 - ANDURÁ STUDIO</div>
     </div>
     <div class="container">
       <div class="row justify-content-center">
@@ -235,6 +201,22 @@
     </div>
   </footer>
 
+</div>
+
+<!--Pre-Loader-->
+<script>
+  var myVar;
+
+function loaderFunction() {
+myVar = setTimeout(showPage, 1500);
+}
+
+function showPage() {
+document.getElementById("loader").style.display = "none";
+document.getElementById("myDiv").style.display = "block";
+}
+</script>
+
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -245,14 +227,6 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/creative.min.js"></script>
-
-  <!--Loader-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script>
-    setTimeout(function(){
-      $('.loader_bg').fadeToggle();
-    }, 1500);
-  </script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164609733-1"></script>
