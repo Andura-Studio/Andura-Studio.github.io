@@ -9985,15 +9985,6 @@ header.masthead h1 {
   height: contain;
   margin-top: 10px;
   opacity: 0.9;
-
-  position: relative;
-  -webkit-animation: moving-img 5s;
-}
-
-@-webkit-keyframes moving-img {
-	0% { left: 0; opacity: 1; }
-	50% { left: -25px;opacity: 1; }
-	100% { left: -25px; opacity: 0;}
 }
 #mainSlider .carousel-inner,
 #mainSlider .carousel-item {
@@ -10089,6 +10080,15 @@ header.masthead h1 {
       width: auto;
       height: auto;
       margin-top: 15px;
+
+      position: relative;
+      -webkit-animation: moving-img 5s forwards;
+  }
+
+  @-webkit-keyframes moving-img {
+    0% { left: 0; opacity: 0; }
+    50% { left: -25px;opacity: 1; }
+    100% { left: -25px; opacity: 1;}
   }
   .carousel-control-prev {
       height: 200px;
@@ -10136,6 +10136,15 @@ header.masthead h1 {
       width: auto;
       height: auto;
       margin-top: 15px;
+
+      position: relative;
+      -webkit-animation: moving-img 5s forwards;
+  }
+
+  @-webkit-keyframes moving-img {
+    0% { left: 0; opacity: 0; }
+    50% { left: -25px;opacity: 1; }
+    100% { left: -25px; opacity: 1;}
   }
   .carousel-control-prev {
       height: 450px;
@@ -10183,6 +10192,15 @@ header.masthead h1 {
       height: contain;
       width: contain;
       margin-top: 15px;
+
+      position: relative;
+      -webkit-animation: moving-img 5s forwards;
+  }
+
+  @-webkit-keyframes moving-img {
+    0% { left: 0; opacity: 0; }
+    50% { left: -35px;opacity: 1; }
+    100% { left: -35px; opacity: 1;}
   }
   .carousel-control-prev {
       height: 700px;
